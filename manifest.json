@@ -29,7 +29,7 @@
       "renderer/_default.page.client.jsx",
       "renderer/_default.page.server.jsx?extractAssets&lang.jsx"
     ],
-    "file": "assets/entries/entry-server-routing.1052121c.js",
+    "file": "assets/entries/entry-server-routing.29844d97.js",
     "imports": [
       "_chunk-9b1c70a0.js"
     ],
@@ -44,7 +44,7 @@
       "renderer/_default.page.client.jsx",
       "renderer/_default.page.server.jsx?extractAssets&lang.jsx"
     ],
-    "file": "assets/entries/entry-client-routing.5c936a51.js",
+    "file": "assets/entries/entry-client-routing.f5b8a175.js",
     "imports": [
       "_chunk-9b1c70a0.js"
     ],
@@ -79,7 +79,7 @@
     "src": "pages/index/index.page.jsx"
   },
   "renderer/_default.page.client.jsx": {
-    "file": "assets/entries/renderer_default.page.client.66ee770c.js",
+    "file": "assets/entries/renderer_default.page.client.00d20cdd.js",
     "imports": [
       "_chunk-3abbb91c.js",
       "_chunk-83a2ea5a.js",
