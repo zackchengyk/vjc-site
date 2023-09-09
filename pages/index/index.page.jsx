@@ -1,6 +1,6 @@
 import { Canvas } from '@react-three/fiber'
-import { Counter } from '/components/Counter'
-import { Experience } from '/components/Experience'
+import { Counter } from '/resources/components/Counter'
+import { Experience } from '/resources/components/Experience'
 
 export { Page }
 
