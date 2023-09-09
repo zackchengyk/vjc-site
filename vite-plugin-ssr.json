@@ -2,7 +2,7 @@
   "version": "0.4.135",
   "usesClientRouter": true,
   "manifestKeyMap": {},
-  "baseServer": "/vjc-site/",
-  "baseAssets": "/vjc-site/",
+  "baseServer": "/",
+  "baseAssets": "/",
   "includeAssetsImportedByServer": true
 }
