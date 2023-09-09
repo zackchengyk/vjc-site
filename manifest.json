@@ -1,25 +1,37 @@
 {
-  "_chunk-0cbd44a4.js": {
-    "file": "assets/chunks/chunk-0cbd44a4.js"
+  "_chunk-39b5b250.js": {
+    "file": "assets/chunks/chunk-39b5b250.js"
+  },
+  "_chunk-3abbb91c.js": {
+    "file": "assets/chunks/chunk-3abbb91c.js"
+  },
+  "_chunk-83a2ea5a.js": {
+    "file": "assets/chunks/chunk-83a2ea5a.js",
+    "imports": [
+      "_chunk-39b5b250.js",
+      "_chunk-3abbb91c.js"
+    ]
   },
   "_chunk-9b1c70a0.js": {
     "file": "assets/chunks/chunk-9b1c70a0.js"
   },
-  "_chunk-fef815e8.js": {
-    "file": "assets/chunks/chunk-fef815e8.js",
+  "_chunk-fffdc91c.js": {
+    "file": "assets/chunks/chunk-fffdc91c.js",
     "imports": [
-      "_chunk-0cbd44a4.js"
+      "_chunk-39b5b250.js"
     ]
   },
   "node_modules/vite-plugin-ssr/dist/esm/client/entry.js": {
     "dynamicImports": [
-      "pages/about.page.jsx",
       "pages/index.page.jsx",
+      "pages/spaces.page.jsx",
+      "pages/stories.page.jsx",
+      "pages/team.page.jsx",
       "renderer/_error.page.jsx",
       "renderer/_default.page.client.jsx",
       "renderer/_default.page.server.jsx?extractAssets&lang.jsx"
     ],
-    "file": "assets/entries/entry-server-routing.15218267.js",
+    "file": "assets/entries/entry-server-routing.dc8de6b8.js",
     "imports": [
       "_chunk-9b1c70a0.js"
     ],
@@ -28,43 +40,67 @@
   },
   "node_modules/vite-plugin-ssr/dist/esm/client/router/entry.js": {
     "dynamicImports": [
-      "pages/about.page.jsx",
       "pages/index.page.jsx",
+      "pages/spaces.page.jsx",
+      "pages/stories.page.jsx",
+      "pages/team.page.jsx",
       "renderer/_error.page.jsx",
       "renderer/_default.page.client.jsx",
       "renderer/_default.page.server.jsx?extractAssets&lang.jsx"
     ],
-    "file": "assets/entries/entry-client-routing.590974c9.js",
+    "file": "assets/entries/entry-client-routing.352e18a3.js",
     "imports": [
       "_chunk-9b1c70a0.js"
     ],
     "isEntry": true,
     "src": "node_modules/vite-plugin-ssr/dist/esm/client/router/entry.js"
   },
-  "pages/about.page.jsx": {
-    "file": "assets/entries/pages_about.page.6ce2d67d.js",
-    "imports": [
-      "_chunk-0cbd44a4.js"
-    ],
-    "isDynamicEntry": true,
-    "isEntry": true,
-    "src": "pages/about.page.jsx"
-  },
   "pages/index.page.jsx": {
-    "file": "assets/entries/pages_index.page.e03b6145.js",
+    "file": "assets/entries/pages_index.page.68b6d12f.js",
     "imports": [
-      "_chunk-0cbd44a4.js"
+      "_chunk-3abbb91c.js",
+      "_chunk-83a2ea5a.js",
+      "_chunk-39b5b250.js"
     ],
     "isDynamicEntry": true,
     "isEntry": true,
     "src": "pages/index.page.jsx"
   },
-  "renderer/_default.page.client.jsx": {
-    "file": "assets/entries/renderer_default.page.client.d4e2e88d.js",
+  "pages/spaces.page.jsx": {
+    "file": "assets/entries/pages_spaces.page.9eb5781a.js",
     "imports": [
-      "_chunk-0cbd44a4.js",
-      "_chunk-fef815e8.js",
-      "renderer/_default.page.server.jsx?extractAssets&lang.jsx"
+      "_chunk-3abbb91c.js"
+    ],
+    "isDynamicEntry": true,
+    "isEntry": true,
+    "src": "pages/spaces.page.jsx"
+  },
+  "pages/stories.page.jsx": {
+    "file": "assets/entries/pages_stories.page.7f90e932.js",
+    "imports": [
+      "_chunk-3abbb91c.js"
+    ],
+    "isDynamicEntry": true,
+    "isEntry": true,
+    "src": "pages/stories.page.jsx"
+  },
+  "pages/team.page.jsx": {
+    "file": "assets/entries/pages_team.page.1feaa41e.js",
+    "imports": [
+      "_chunk-3abbb91c.js"
+    ],
+    "isDynamicEntry": true,
+    "isEntry": true,
+    "src": "pages/team.page.jsx"
+  },
+  "renderer/_default.page.client.jsx": {
+    "file": "assets/entries/renderer_default.page.client.00d20cdd.js",
+    "imports": [
+      "_chunk-3abbb91c.js",
+      "_chunk-83a2ea5a.js",
+      "_chunk-fffdc91c.js",
+      "renderer/_default.page.server.jsx?extractAssets&lang.jsx",
+      "_chunk-39b5b250.js"
     ],
     "isDynamicEntry": true,
     "isEntry": true,
@@ -84,10 +120,11 @@
     "src": "renderer/_default.page.server.jsx?extractAssets&lang.jsx"
   },
   "renderer/_error.page.jsx": {
-    "file": "assets/entries/renderer_error.page.e2cca299.js",
+    "file": "assets/entries/renderer_error.page.bc33854f.js",
     "imports": [
-      "_chunk-0cbd44a4.js",
-      "_chunk-fef815e8.js"
+      "_chunk-3abbb91c.js",
+      "_chunk-fffdc91c.js",
+      "_chunk-39b5b250.js"
     ],
     "isDynamicEntry": true,
     "isEntry": true,
