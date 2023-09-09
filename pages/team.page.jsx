@@ -1,11 +1,12 @@
-import './code.css'
-
 export { Page }
+export { documentProps }
+
+const documentProps = { title: 'Team' }
 
 function Page() {
   return (
     <>
-      <h1>About</h1>
+      <h1>Team</h1>
       <p>
         Example of using <code>vite-plugin-ssr</code>.
       </p>

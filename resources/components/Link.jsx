@@ -10,11 +10,14 @@ Link.propTypes = {
 }
 
 function Link(props) {
+  // Ensure all links start with `/`, to support future changes of base URL
   if (!props.href.startsWith('/')) throw new Error('Link href should start with /')
 
+  // Append base URL
   const cleanedHREF = normalize(import.meta.env.BASE_URL + props.href)
-  const urlPathname = usePageContext().urlPathname
 
+  // Add `is-active` to class name
+  const urlPathname = usePageContext().urlPathname
   const className = [props.className, urlPathname === cleanedHREF && 'is-active'].filter(Boolean).join(' ')
 
   return <a {...props} className={className} />
