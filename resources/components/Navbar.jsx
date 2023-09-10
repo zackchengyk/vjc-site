@@ -1,21 +1,26 @@
 import React from 'react'
 
+import { Link } from '/resources/components/Link'
+
 export { NavBar }
 
 const navItems = [
   { text: 'Video', href: '/' },
-  { text: 'Scenes', href: '/scenes' },
-  { text: 'Collections', href: '/collections' },
+  { text: 'Spaces', href: '/spaces' },
+  { text: 'Stories', href: '/stories' },
+  { text: 'Team', href: '/team' },
 ]
 
-function NavBar({ url }) {
+function NavBar() {
   return (
     <nav id="nav-bar">
-      {navItems.map((navItem) => (
-        <a key={navItem.text} href={navItem.href} className={['nav-item', ...(navItem.href === url ? ['active'] : [])]}>
-          {navItem.text}
-        </a>
-      ))}
+      <div id="nav-items">
+        {navItems.map(({ text, href }) => (
+          <Link key={text} href={href} className={'nav-item'}>
+            {text}
+          </Link>
+        ))}
+      </div>
     </nav>
   )
 }

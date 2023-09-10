@@ -5,7 +5,7 @@ import { Classroom } from '/resources/components/dioramas/Classroom'
 export { Page }
 export { documentProps }
 
-const documentProps = { title: 'Home' }
+const documentProps = { title: 'Video' }
 
 function Page() {
   return (

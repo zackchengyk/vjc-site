@@ -1,0 +1,46 @@
+@use 'sass:color';
+@use 'sass:math';
+
+$background-color: #fff;
+$text-color: #222;
+
+$nav-bar-height: 60px;
+$nav-bar-padding: 0 20px;
+$nav-items-max-width: 800px;
+
+// A polyfill for `inset`
+@mixin inset($top, $right, $bottom, $left) {
+  top: $top;
+  right: $right;
+  bottom: $bottom;
+  left: $left;
+}
+
+// A consistent interaction design for clickable links
+@mixin anchor-text($color: $link, $hover-color: $color, $hover-background-color: transparent) {
+  text-decoration: underline;
+  text-decoration-thickness: 1px;
+  text-underline-offset: 0.1em !important;
+
+  text-decoration-color: transparent;
+  transition: text-decoration-color ease-in-out 0.28s 0.02s, background-color ease-in-out 0.28s 0.02s,
+    color ease-in-out 0.28s 0.02s;
+
+  color: $color;
+
+  &:visited {
+    color: $color;
+  }
+
+  // Warning: due to a mysterious bug on desktop Safari, you NEED `color` or `background-color` to change
+  //          in order for `text-decoration-color` to transition correctly. This applies to certain cases,
+  //          including but not limited to: when display flex, grid, or inline-flex are used.
+  &:focus,
+  &:hover {
+    text-decoration-color: $hover-color;
+    transition: text-decoration-color ease-in-out 0.01s, background-color ease-in-out 0.01s, color ease-in-out 0.01s;
+
+    color: $hover-color;
+    background-color: $hover-background-color;
+  }
+}

@@ -1,0 +1,32 @@
+@import 'base.scss';
+
+#nav-bar {
+  position: sticky;
+  z-index: 999;
+  @include inset(0, 0, auto, 0);
+
+  height: $nav-bar-height;
+  padding: $nav-bar-padding;
+
+  background-color: $background-color;
+}
+
+#nav-items {
+  height: 100%;
+  width: 100%;
+  max-width: $nav-items-max-width;
+
+  margin: 0 auto;
+
+  display: grid;
+  grid-template: minmax(0, 1fr) / repeat(auto-fit, minmax(0, 1fr));
+  place-items: stretch;
+}
+
+.nav-item {
+  // Important: see warning in `anchor-text`
+  @include anchor-text($text-color, $text-color, $background-color);
+  background-color: transparent;
+  display: grid;
+  place-items: center;
+}
