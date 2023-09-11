@@ -6,7 +6,6 @@ export { Link }
 
 Link.propTypes = {
   href: PropTypes.string.isRequired,
-  className: PropTypes.string,
 }
 
 function Link(props) {

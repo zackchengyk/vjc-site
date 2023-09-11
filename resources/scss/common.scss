@@ -8,12 +8,27 @@ $nav-bar-height: 60px;
 $nav-bar-padding: 0 20px;
 $nav-items-max-width: 800px;
 
-// A polyfill for `inset`
+$header-font-family: 'Inter', serif; // TO FIX: serif is for making errors obvious
+$header-font-sizes: 30px 26px 22px 18px 16px 14px;
+$header-font-weights: 700 700 700 700 700 700;
+$header-line-height: 1.5;
+$header-color: $text-color;
+
+// Efficient way of specifying `inset` while keeping browser compatibility
 @mixin inset($top, $right, $bottom, $left) {
   top: $top;
   right: $right;
   bottom: $bottom;
   left: $left;
+}
+
+// Efficient way of specifying header styles
+@mixin header-text($header-level) {
+  font-family: $header-font-family;
+  font-size: nth($header-font-sizes, $header-level);
+  font-weight: nth($header-font-weights, $header-level);
+  line-height: $header-line-height;
+  color: $header-color;
 }
 
 // A consistent interaction design for clickable links
