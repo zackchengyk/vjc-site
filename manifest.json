@@ -31,7 +31,7 @@
       "renderer/_default.page.client.jsx",
       "renderer/_default.page.server.jsx?extractAssets&lang.jsx"
     ],
-    "file": "assets/entries/entry-server-routing.fd46a35c.js",
+    "file": "assets/entries/entry-server-routing.87a99e55.js",
     "imports": [
       "_chunk-6041532e.js"
     ],
@@ -48,7 +48,7 @@
       "renderer/_default.page.client.jsx",
       "renderer/_default.page.server.jsx?extractAssets&lang.jsx"
     ],
-    "file": "assets/entries/entry-client-routing.d06f3124.js",
+    "file": "assets/entries/entry-client-routing.f0c1c245.js",
     "imports": [
       "_chunk-6041532e.js"
     ],
@@ -56,7 +56,7 @@
     "src": "node_modules/vite-plugin-ssr/dist/esm/client/router/entry.js"
   },
   "pages/index.page.jsx": {
-    "file": "assets/entries/pages_index.page.1075be16.js",
+    "file": "assets/entries/pages_index.page.16c20657.js",
     "imports": [
       "_chunk-3abbb91c.js",
       "_chunk-83a2ea5a.js",
@@ -94,7 +94,7 @@
     "src": "pages/team.page.jsx"
   },
   "renderer/_default.page.client.jsx": {
-    "file": "assets/entries/renderer_default.page.client.1828c130.js",
+    "file": "assets/entries/renderer_default.page.client.0b8e56a0.js",
     "imports": [
       "_chunk-3abbb91c.js",
       "_chunk-83a2ea5a.js",
@@ -107,14 +107,14 @@
     "src": "renderer/_default.page.client.jsx"
   },
   "renderer/_default.page.server.jsx?extractAssets&lang.css": {
-    "file": "assets/static/default.page.server.18904352.css",
+    "file": "assets/static/default.page.server.d5c69628.css",
     "src": "renderer/_default.page.server.jsx?extractAssets&lang.css"
   },
   "renderer/_default.page.server.jsx?extractAssets&lang.jsx": {
     "css": [
-      "assets/static/default.page.server.18904352.css"
+      "assets/static/default.page.server.d5c69628.css"
     ],
-    "file": "assets/entries/renderer_default.page.server.extractAssets.9b1ec28d.js",
+    "file": "assets/entries/renderer_default.page.server.extractAssets.064a3084.js",
     "isDynamicEntry": true,
     "isEntry": true,
     "src": "renderer/_default.page.server.jsx?extractAssets&lang.jsx"
