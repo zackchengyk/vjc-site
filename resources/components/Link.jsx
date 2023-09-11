@@ -20,7 +20,7 @@ function Link(props) {
   const urlPathname = usePageContext().urlPathname
   const className = [props.className, urlPathname === cleanedHREF && 'is-active'].filter(Boolean).join(' ')
 
-  return <a {...props} className={className} />
+  return <a {...props} href={cleanedHREF} className={className} />
 }
 
 function normalize(url) {
