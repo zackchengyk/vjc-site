@@ -3,8 +3,9 @@
   "scripts": {
     "dev": "vite --host",
     "build": "vite build",
-    "preview": "vite build && vite preview --host",
-    "build-for-gh-pages": "vite build --base=/vjc-site/"
+    "preview": "npm run build && vite preview --host",
+    "build-ghp": "vite build --base=/vjc-site/",
+    "preview-ghp": "npm run build-ghp && vite preview --host --base=/vjc-site/"
   },
   "dependencies": {
     "@react-three/drei": "^9.80.2",
