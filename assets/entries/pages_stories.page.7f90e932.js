@@ -1,1 +1,0 @@
-import{j as e,F as o,a as r}from"../chunks/chunk-3abbb91c.js";const s={title:"Stories"};function n(){return e(o,{children:[r("h1",{children:"Stories"}),r("p",{children:"Todo"})]})}export{n as Page,s as documentProps};
