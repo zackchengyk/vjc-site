@@ -1,0 +1,63 @@
+@use 'sass:math';
+
+@import 'common.scss';
+
+$sqrt3over2: math.div(math.sqrt(3), 2);
+
+#stories-section {
+  display: grid;
+  grid-template: repeat(auto-fit, minmax(0, 1fr)) / repeat(4, minmax(0, 1fr));
+}
+
+.story-wrapper {
+  display: inline-block;
+  vertical-align: middle;
+
+  height: 300px;
+  width: 450px;
+
+  overflow: hidden;
+
+  // Perspective transformations
+  transform-style: preserve-3d;
+  &.floor-left {
+    transform: rotate(-30deg) skewX(30deg) scaleY($sqrt3over2);
+  }
+  &.floor-right {
+    transform: rotate(30deg) skewX(-30deg) scaleY($sqrt3over2);
+  }
+  &.wall-left {
+    transform: skewY(-30deg) scaleX($sqrt3over2);
+  }
+  &.wall-right {
+    transform: skewY(30deg) scaleX($sqrt3over2);
+  }
+}
+
+.story-images {
+  position: absolute;
+  @include inset(0, auto, 0, 0);
+  height: 100%;
+
+  animation: scroll linear infinite;
+
+  display: flex;
+
+  .story-image-wrapper {
+    height: 100%;
+  }
+
+  .story-image {
+    object-fit: contain;
+    height: 100%;
+  }
+}
+
+@keyframes scroll {
+  from {
+    transform: translateX(0%);
+  }
+  to {
+    transform: translateX(var(--max-translate));
+  }
+}
