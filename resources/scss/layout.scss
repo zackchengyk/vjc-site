@@ -31,6 +31,10 @@ html {
 body {
   position: relative;
 
+  // Force scrollbar on every page to avoid layout jumping between pages
+  overflow-y: scroll;
+
+  // Make body fill up entire screen
   min-height: 100vh;
   // Fixes iOS Safari, where vh mysteriously counts the space under the collapsible search bar
   @supports (-webkit-touch-callout: none) {
