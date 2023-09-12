@@ -1,3 +1,6 @@
+import { Classroom } from '/resources/components/dioramas/Classroom'
+import { DioramaWrapper } from '/resources/components/DioramaWrapper'
+
 export { Page }
 export { documentProps }
 
@@ -8,6 +11,9 @@ function Page() {
     <>
       <h1>Spaces</h1>
       <p>Todo</p>
+      <DioramaWrapper>
+        <Classroom />
+      </DioramaWrapper>
     </>
   )
 }
