@@ -1,7 +1,5 @@
 @import 'common.scss';
 
-@import url('https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible:ital,wght@0,400;0,700;1,400;1,700&family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap');
-
 *,
 *:before,
 *:after {
@@ -34,17 +32,12 @@ body {
   // Force scrollbar on every page to avoid layout jumping between pages
   overflow-y: scroll;
 
-  // Make body fill up entire screen
-  min-height: 100vh;
-  // Fixes iOS Safari, where vh mysteriously counts the space under the collapsible search bar
-  @supports (-webkit-touch-callout: none) {
-    min-height: -webkit-fill-available;
-  }
+  @include full-screen-height;
 
   background-color: $background-color;
   color: $text-color;
 
-  font-family: 'Inter', serif;
+  font-family: X;
 }
 
 @for $header-level from 1 through 6 {
@@ -59,6 +52,20 @@ button {
   -webkit-tap-highlight-color: transparent;
 }
 
+img,
+video {
+  display: block;
+  min-width: 0;
+  width: 100%; // Necessary to prevent gap bug on Safari
+  max-width: 100%;
+}
+
 main {
   text-align: center;
+}
+
+.top-level-section {
+  @include full-screen-height;
+
+  padding: 0 2rem;
 }

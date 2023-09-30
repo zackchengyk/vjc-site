@@ -1,7 +1,11 @@
+@use 'sass:color';
+
 @import 'common.scss';
 
 #nav-bar {
-  position: sticky;
+  opacity: 0.05;
+
+  position: fixed;
   z-index: 999;
   @include inset(0, 0, auto, 0);
 

@@ -1,0 +1,12 @@
+@import '../common.scss';
+
+#preface {
+  background-color: rgba(0, 255, 0, 0.1);
+
+  display: grid;
+  place-items: center;
+
+  > h1 {
+    text-transform: capitalize;
+  }
+}

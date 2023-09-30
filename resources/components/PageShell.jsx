@@ -1,5 +1,5 @@
 import React from 'react'
-import '/resources/scss/index.scss'
+import '/resources/scss/layout.scss'
 
 import { NavBar } from '/resources/components/NavBar'
 import { PageContextProvider } from '/renderer/usePageContext'

@@ -1,0 +1,33 @@
+@import '../common.scss';
+
+#documentary {
+  background-color: rgba(0, 0, 255, 0.1);
+}
+
+#documentary-teaser {
+  @include full-screen-height;
+  position: relative;
+
+  > * {
+    position: absolute;
+    @include inset(0, 0, 0, 0);
+
+    height: 100%;
+    width: 100%;
+  }
+}
+
+#documentary-teaser-video {
+  z-index: 0;
+  object-fit: cover;
+}
+
+#documentary-teaser-overlay {
+  z-index: 1;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+#documentary-teaser-text {
+  z-index: 2;
+  color: white;
+}

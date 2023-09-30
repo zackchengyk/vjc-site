@@ -1,29 +1,22 @@
+import { HeroSection } from '/resources/components/sections/HeroSection'
+import { PrefaceSection } from '/resources/components/sections/PrefaceSection'
+import { DocumentarySection } from '/resources/components/sections/DocumentarySection'
+import { MapSection } from '/resources/components/sections/MapSection'
+import { TeamSection } from '/resources/components/sections/TeamSection'
+
 export { Page }
 export { documentProps }
 
-const documentProps = { title: 'Video' }
+const documentProps = { title: 'The School That Watched Us Grow' }
 
 function Page() {
   return (
     <>
-      <section id="splash-section">
-        <h1>The School That Watched Us Grow</h1>
-      </section>
-      <section id="introduction-section">
-        <h2>Introduction Section</h2>
-      </section>
-      <section id="documentary-section">
-        <h2>Documentary Section</h2>
-      </section>
-      <section id="map-section">
-        <h2>Map Section</h2>
-      </section>
-      <section id="closing-section">
-        <h2>Closing Section</h2>
-      </section>
-      <section id="team-section">
-        <h2>Team Section</h2>
-      </section>
+      <HeroSection />
+      <PrefaceSection />
+      <DocumentarySection />
+      <MapSection />
+      <TeamSection />
     </>
   )
 }

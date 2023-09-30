@@ -1,18 +1,22 @@
 @use 'sass:color';
 @use 'sass:math';
 
-$background-color: #fff;
-$text-color: #222;
+@import url('https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100;0,200;0,250;0,300;0,350;0,400;0,500;0,600;0,700;1,100;1,200;1,250;1,300;1,350;1,400;1,500;1,600;1,700&display=swap');
+
+$background-color: rgb(245, 243, 243);
+$text-color: rgb(30, 30, 30);
+$text-font-family: 'Rubik', serif; // TO FIX: serif is for making errors obvious
 
 $nav-bar-height: 60px;
 $nav-bar-padding: 0 20px;
 $nav-items-max-width: 800px;
 
-$header-font-family: 'Inter', serif; // TO FIX: serif is for making errors obvious
-$header-font-sizes: 30px 26px 22px 18px 16px 14px;
-$header-font-weights: 700 700 700 700 700 700;
-$header-line-height: 1.5;
-$header-color: $text-color;
+$header-font-family: $text-font-family;
+$header-font-sizes: 3rem 2rem 22px 18px 16px 14px;
+$header-font-weights: 400 350 350 350 350 350;
+$header-line-height: 1.35;
 
 // Efficient way of specifying `inset` while keeping browser compatibility
 @mixin inset($top, $right, $bottom, $left) {
@@ -24,11 +28,11 @@ $header-color: $text-color;
 
 // Efficient way of specifying header styles
 @mixin header-text($header-level) {
+  text-transform: capitalize;
   font-family: $header-font-family;
   font-size: nth($header-font-sizes, $header-level);
   font-weight: nth($header-font-weights, $header-level);
   line-height: $header-line-height;
-  color: $header-color;
 }
 
 // A consistent interaction design for clickable links
@@ -57,5 +61,19 @@ $header-color: $text-color;
 
     color: $hover-color;
     background-color: $hover-background-color;
+  }
+}
+
+// Full screen height
+@mixin full-screen-height($component-fills-screen: false) {
+  // Fill up entire screen
+  min-height: 100vh;
+
+  // Use this if this is the only component (i.e. page cannot be scrolled)
+  @if $component-fills-screen {
+    // Fixes iOS Safari, where vh mysteriously counts the space under the collapsible search bar
+    @supports (-webkit-touch-callout: none) {
+      min-height: -webkit-fill-available;
+    }
   }
 }

@@ -1,0 +1,10 @@
+@import '../common.scss';
+
+#hero {
+  display: grid;
+  place-items: center;
+
+  > h1 {
+    text-transform: capitalize;
+  }
+}
