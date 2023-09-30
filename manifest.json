@@ -15,7 +15,7 @@
       "renderer/_default.page.client.jsx",
       "renderer/_default.page.server.jsx?extractAssets&lang.jsx"
     ],
-    "file": "assets/entries/entry-server-routing.e763ab06.js",
+    "file": "assets/entries/entry-server-routing.26f5f3f3.js",
     "imports": [
       "_chunk-6041532e.js"
     ],
@@ -29,15 +29,22 @@
       "renderer/_default.page.client.jsx",
       "renderer/_default.page.server.jsx?extractAssets&lang.jsx"
     ],
-    "file": "assets/entries/entry-client-routing.482215dc.js",
+    "file": "assets/entries/entry-client-routing.a06a7541.js",
     "imports": [
       "_chunk-6041532e.js"
     ],
     "isEntry": true,
     "src": "node_modules/vite-plugin-ssr/dist/esm/client/router/entry.js"
   },
+  "pages/index.page.css": {
+    "file": "assets/static/index.page.e7138d9d.css",
+    "src": "pages/index.page.css"
+  },
   "pages/index.page.jsx": {
-    "file": "assets/entries/pages_index.page.44981aa2.js",
+    "css": [
+      "assets/static/index.page.e7138d9d.css"
+    ],
+    "file": "assets/entries/pages_index.page.a88222d5.js",
     "imports": [
       "_chunk-3abbb91c.js"
     ],
@@ -46,7 +53,7 @@
     "src": "pages/index.page.jsx"
   },
   "renderer/_default.page.client.jsx": {
-    "file": "assets/entries/renderer_default.page.client.3e27ddcd.js",
+    "file": "assets/entries/renderer_default.page.client.24c16974.js",
     "imports": [
       "_chunk-3abbb91c.js",
       "_chunk-7b6e0389.js",
@@ -57,14 +64,14 @@
     "src": "renderer/_default.page.client.jsx"
   },
   "renderer/_default.page.server.jsx?extractAssets&lang.css": {
-    "file": "assets/static/default.page.server.de9c9d3a.css",
+    "file": "assets/static/default.page.server.8cecfbbe.css",
     "src": "renderer/_default.page.server.jsx?extractAssets&lang.css"
   },
   "renderer/_default.page.server.jsx?extractAssets&lang.jsx": {
     "css": [
-      "assets/static/default.page.server.de9c9d3a.css"
+      "assets/static/default.page.server.8cecfbbe.css"
     ],
-    "file": "assets/entries/renderer_default.page.server.extractAssets.51ebb2c3.js",
+    "file": "assets/entries/renderer_default.page.server.extractAssets.2af73ef5.js",
     "isDynamicEntry": true,
     "isEntry": true,
     "src": "renderer/_default.page.server.jsx?extractAssets&lang.jsx"
