@@ -4,12 +4,7 @@ import { Link } from '/resources/components/Link'
 
 export { NavBar }
 
-const navItems = [
-  { text: 'Video', href: '/' },
-  { text: 'Spaces', href: '/spaces' },
-  { text: 'Stories', href: '/stories' },
-  { text: 'Team', href: '/team' },
-]
+const navItems = [{ text: 'Home', href: '/' }]
 
 function NavBar() {
   return (
