@@ -1,10 +1,36 @@
 @import '../common.scss';
 
 #preface {
-  background-color: rgba(0, 255, 0, 0.1);
+  position: relative;
+  z-index: 1;
+
+  background-color: rgba(19, 209, 143, 0.1);
 
   display: grid;
   place-items: center;
+
+  &::before {
+    opacity: .2;
+
+    position: absolute;
+    z-index: -1;
+
+    height: 100%;
+    width: 100%;
+
+    background-image:
+      linear-gradient(
+        rgba(0, 0, 0, 1) 0%,
+        rgba(0, 0, 0, 0.6) 40%,
+        rgba(0, 0, 0, 0.6) 60%,
+        rgba(0, 0, 0, 1) 100%
+      ),
+      url('public/assets/images/felt-texture.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    content: '';
+  }
 
   > h1 {
     text-transform: capitalize;
